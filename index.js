@@ -24,7 +24,7 @@ socketio.sockets.on('connection', function (client) {
     client.userid = UUID();
 
             //tell the player they connected, giving them their id
-    client.emit('onconnected', { id: client.userid } );
+    client.emit('onconnected', {id: client.userid});
 
             //Useful to know when someone connects
     console.log('\t socket.io:: player ' + client.userid + ' connected');
@@ -33,7 +33,7 @@ socketio.sockets.on('connection', function (client) {
     client.on('disconnect', function () {
 
                 //Useful to know when someone disconnects
-    console.log('\t socket.io:: client disconnected ' + client.userid );
+    console.log('\t socket.io:: client disconnected ' + client.userid);
     }); //client.on disconnect
      
 }); //socketio.sockets.on connection
