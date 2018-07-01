@@ -15,10 +15,10 @@ app.get('/', function(req, res){
     res.sendFile( __dirname + '/client/index.html');     
     console.log("GET / HTTP/1.1")
 }); 
-app.get('/client/*' , function(req, res, next) {
+app.get('/*' , function(req, res, next) {
     var file = req.params[0];
     console.log('\t :: Express :: file requested : ' + file);
-    res.sendFile(__dirname + '/client/' + file);
+    res.sendFile(__dirname + '/' + file);
 });
 socketio.sockets.on('connection', function (client) {
     client.userid = UUID();
