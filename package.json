@@ -6,10 +6,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.15.2",
-    "node-uuid": "1.4.8",
-    "socket.io": "^2.1.1",
-    "mime": "^1.4.1"
+    "express": "=4.15.2",
+    "node-uuid": "=1.4.8",
+    "socket.io": "=2.1.1",
+    "mime": ">=1.4.1"
   },
   "description": ""
 }
